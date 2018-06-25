@@ -1,0 +1,25 @@
+/*Antonio Ramirez Flores; CSS for Aldana6*/
+body {
+    width: 99%;
+    height: 99%;
+    background: linear-gradient(white 70%, #b5261e 30%);
+}
+
+.central {
+    width: 450px;
+    height: 450px;
+    margin: 100px auto;
+}
+
+.central>h1 {
+    margin: 2px auto;
+}
+
+.frm {
+    display: block;
+    margin-top: 15px;
+}
+
+h4 {
+    margin: 0;
+}
