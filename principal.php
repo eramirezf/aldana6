@@ -45,19 +45,20 @@
     <body>
         
         <div class="prime">
-            <h1>Bienvenido a Aldana6 <b><?php echo $nombreUsuario ?></b></h1>
+            <h1>Bienvenido a Aldana6</h1>
             <h4>Programa de captura de resultados electorales</h4>
             <h5>Municipio de Ecatepec | Distrito Local 6</h5>
             <h5>Equipo de Apoyo a la Candidata Elba Aldana Duarte</h5>
             <p>Elige lo que quieres hacer: </p>
             <div>
                 <div class="opt">
-                    Captura de Actas
+                    <a href="ica.php">Captura de Actas</a>
                 </div>
                 <div class="opt">
-                    Resultados
+                    <a href="ir.php">Resultados</a>
                 </div>
             </div>
+            <div><a href="exit.php">Cerrar sesión</a></div>
         </div>
         
     </body>

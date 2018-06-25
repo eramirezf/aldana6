@@ -10,6 +10,10 @@ body {
     margin: auto;
 }
 
+.prime > h1, h4, h5 {
+    text-align: center;
+}
+
 .opt {
     display: inline-block;
     margin: 15px;
@@ -18,5 +22,5 @@ body {
     font-size: larger;
     background-color: #b2c7ea;
     width: 150px;
-    height: 150px;
+    height: 50px;
 }
