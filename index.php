@@ -1,11 +1,13 @@
-<!DOCTYPE html>
 <html>
     <head>
         <title>Aldana6 | M&eacute;xico 2018</title>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <meta name="viewport" content="width=viewport-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/index.css">
-        <script src="https://code.jquery.com/jquery-3.3.1.min.js" type="text/javascript"></script>
+        <link href="css/jquery.alerts.css" rel="stylesheet" type="text/css" />
+        <script src="js/jquery171.js" type="text/javascript"></script> 
+	    <script src="js/jquery.validate.js" type="text/javascript"></script>
+	    <script src="js/jquery.alerts.js" type="text/javascript"></script>
         
         <script type="text/javascript">
 	    <!--
@@ -19,18 +21,11 @@
     
     <body>
         
-<?php
-// A simple web site in Cloud9 that runs through Apache
-// Press the 'Run' button on the top to start the web server,
-// then click the URL that is emitted to the Output tab of the console
 
-//echo 'Hello world from Cloud9!';
-
-?>
         <div class="central">
             <h1>Aldana6 | Resultados electorales</h1>
             <div>
-                <form id="frmlogin" name="frmlogin"  method="POST" action="lab/valid_user.php">
+                <form id="frmlogin" name="frmlogin"  method="POST" action="valid_user.php">
                     <div class="frm">
                         <h4>Usuario:</h4>
                     </div>

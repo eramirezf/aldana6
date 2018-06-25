@@ -9,7 +9,7 @@
     if(!($_SESSION['autenticado'] == 'SI' && isset($_SESSION['uid']))) {
         //Si no está autenticado, redirige al login
         ?>
-        <form name="formulario" method="post" action="../index.php">
+        <form name="formulario" method="post" action="index.php">
             <input type="hidden" name="msg_error" value="2">
         </form>
         <script type="text/javascript">
@@ -26,8 +26,9 @@
     $result = mysql_query($sql);
     $nombreUsuario = "";
     //Formar el nombre completo del usuario
-    if($fila = mysql_fetch_array($result))
+    if($fila = mysql_fetch_array($result)) {
         $nombreUsuario = $fila['name']." id: ".$_SESSION['uid'];
+    }
     //Cerrar conexión a DB:
     mysql_close($conexio);
 ?>
@@ -38,7 +39,7 @@
         <title>Aldana6 | Bienvenido al inicio</title>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <meta name="viewport" content="width=viewport-width, initial-scale=1.0">
-        <link rel="stylesheet" href="../css/principal.css">
+        <link rel="stylesheet" href="css/principal.css">
         <script src="https://code.jquery.com/jquery-3.3.1.min.js" type="text/javascript"></script>
     </head>
     <body>

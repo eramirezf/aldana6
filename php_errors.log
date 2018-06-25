@@ -1,0 +1,34 @@
+[25-Jun-2018 19:15:50 UTC] PHP Warning:  mysql_connect(): Connection refused in /home/ubuntu/workspace/lab/connect_db.php on line 15
+[25-Jun-2018 19:15:50 UTC] PHP Stack trace:
+[25-Jun-2018 19:15:50 UTC] PHP   1. {main}() /home/ubuntu/workspace/lab/valid_user.php:0
+[25-Jun-2018 19:15:50 UTC] PHP   2. connect_db() /home/ubuntu/workspace/lab/valid_user.php:8
+[25-Jun-2018 19:15:50 UTC] PHP   3. mysql_connect() /home/ubuntu/workspace/lab/connect_db.php:15
+[25-Jun-2018 19:27:15 UTC] PHP Warning:  mysql_select_db() expects parameter 2 to be resource, object given in /home/ubuntu/workspace/lab/connect_db.php on line 19
+[25-Jun-2018 19:27:15 UTC] PHP Stack trace:
+[25-Jun-2018 19:27:15 UTC] PHP   1. {main}() /home/ubuntu/workspace/lab/valid_user.php:0
+[25-Jun-2018 19:27:15 UTC] PHP   2. connect_db() /home/ubuntu/workspace/lab/valid_user.php:8
+[25-Jun-2018 19:27:15 UTC] PHP   3. mysql_select_db() /home/ubuntu/workspace/lab/connect_db.php:19
+[25-Jun-2018 19:32:22 UTC] PHP Warning:  mysql_query() expects parameter 2 to be resource, object given in /home/ubuntu/workspace/lab/valid_user.php on line 16
+[25-Jun-2018 19:32:22 UTC] PHP Stack trace:
+[25-Jun-2018 19:32:22 UTC] PHP   1. {main}() /home/ubuntu/workspace/lab/valid_user.php:0
+[25-Jun-2018 19:32:22 UTC] PHP   2. mysql_query() /home/ubuntu/workspace/lab/valid_user.php:16
+[25-Jun-2018 19:32:22 UTC] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, null given in /home/ubuntu/workspace/lab/valid_user.php on line 21
+[25-Jun-2018 19:32:22 UTC] PHP Stack trace:
+[25-Jun-2018 19:32:22 UTC] PHP   1. {main}() /home/ubuntu/workspace/lab/valid_user.php:0
+[25-Jun-2018 19:32:22 UTC] PHP   2. mysql_fetch_array() /home/ubuntu/workspace/lab/valid_user.php:21
+[25-Jun-2018 19:34:14 UTC] PHP Warning:  mysql_query() expects parameter 2 to be resource, object given in /home/ubuntu/workspace/lab/valid_user.php on line 16
+[25-Jun-2018 19:34:14 UTC] PHP Stack trace:
+[25-Jun-2018 19:34:14 UTC] PHP   1. {main}() /home/ubuntu/workspace/lab/valid_user.php:0
+[25-Jun-2018 19:34:14 UTC] PHP   2. mysql_query() /home/ubuntu/workspace/lab/valid_user.php:16
+[25-Jun-2018 19:34:14 UTC] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, null given in /home/ubuntu/workspace/lab/valid_user.php on line 21
+[25-Jun-2018 19:34:14 UTC] PHP Stack trace:
+[25-Jun-2018 19:34:14 UTC] PHP   1. {main}() /home/ubuntu/workspace/lab/valid_user.php:0
+[25-Jun-2018 19:34:14 UTC] PHP   2. mysql_fetch_array() /home/ubuntu/workspace/lab/valid_user.php:21
+[25-Jun-2018 19:34:36 UTC] PHP Warning:  mysql_query() expects parameter 2 to be resource, object given in /home/ubuntu/workspace/lab/valid_user.php on line 16
+[25-Jun-2018 19:34:36 UTC] PHP Stack trace:
+[25-Jun-2018 19:34:36 UTC] PHP   1. {main}() /home/ubuntu/workspace/lab/valid_user.php:0
+[25-Jun-2018 19:34:36 UTC] PHP   2. mysql_query() /home/ubuntu/workspace/lab/valid_user.php:16
+[25-Jun-2018 19:34:36 UTC] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, null given in /home/ubuntu/workspace/lab/valid_user.php on line 21
+[25-Jun-2018 19:34:36 UTC] PHP Stack trace:
+[25-Jun-2018 19:34:36 UTC] PHP   1. {main}() /home/ubuntu/workspace/lab/valid_user.php:0
+[25-Jun-2018 19:34:36 UTC] PHP   2. mysql_fetch_array() /home/ubuntu/workspace/lab/valid_user.php:21

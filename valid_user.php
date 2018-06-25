@@ -1,18 +1,20 @@
 <?php
     /*Code taken from www.notas-programacion.com
-    Code provided 'as is', no liabilities, all rights reserved to them.
+    Code provided 'as is', no liabilities, corresponding rights reserved to them.
     Code modified to satisfy own purposes. No commercial use, just education purposes*/
     
     //Connect to DB
     include("connect_db.php");
     connect_db();
     
+    sleep(10);
+    
     $usr = $_POST['usuario'];
     $pw = $_POST['password'];
     //Versión encriptada del password
     $pw_enc = md5($pw);
     
-    $sql = "SELECT id FROM users WHERE name = '".$usr."' and password = '".$pw_enc."' ";
+    $sql = "SELECT id FROM users WHERE name = '".$usr."' && password = '".$pw."';";
     $result = mysql_query($sql, $conexio);
     
     $uid = "";
@@ -31,7 +33,7 @@
         
         //Crear un formulario para redireccionar al usuario y enviar oculto su id
         ?>
-        <form name="formulario" method="post" action="principal.php">
+        <form name="formulario" method="POST" action="principal.php">
             <input type="hidden" name="idUsr" value='<?php echo $uid ?>'/>
         </form>
         <?php
@@ -41,7 +43,7 @@
         //ninguna fila, redirecciona al login con un mensaje de 
         //error
         ?>
-        <form name="formulario" method="post" action="../index.php">
+        <form name="formulario" method="POST" action="index.php">
             <input type="hidden" name="msg_error" value="1">
         </form>
         <?php
