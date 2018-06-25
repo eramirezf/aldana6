@@ -1,0 +1,22 @@
+body {
+    width: 99%;
+    height: 99%;
+    background: linear-gradient(white 70%, #b5261e 30%);
+}
+
+.prime {
+    width: 500px;
+    height: 800px;
+    margin: auto;
+}
+
+.opt {
+    display: inline-block;
+    margin: 15px;
+    padding: 15px;
+    text-align: center;
+    font-size: larger;
+    background-color: #b2c7ea;
+    width: 150px;
+    height: 150px;
+}

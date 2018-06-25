@@ -2,7 +2,7 @@
 <html>
     <head>
         <title>Aldana6 | M&eacute;xico 2018</title>
-        <meta charset="utf-8">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <meta name="viewport" content="width=viewport-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/index.css">
         <script src="https://code.jquery.com/jquery-3.3.1.min.js" type="text/javascript"></script>
@@ -30,7 +30,7 @@
         <div class="central">
             <h1>Aldana6 | Resultados electorales</h1>
             <div>
-                <form id="frmlogin" name="frmlogin"  method="POST" action="valid_user.php">
+                <form id="frmlogin" name="frmlogin"  method="POST" action="lab/valid_user.php">
                     <div class="frm">
                         <h4>Usuario:</h4>
                     </div>
