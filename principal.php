@@ -40,7 +40,10 @@
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <meta name="viewport" content="width=viewport-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/principal.css">
-        <script src="https://code.jquery.com/jquery-3.3.1.min.js" type="text/javascript"></script>
+        <link href="css/jquery.alerts.css" rel="stylesheet" type="text/css" />
+        <script src="js/jquery171.js" type="text/javascript"></script> 
+	    <script src="js/jquery.validate.js" type="text/javascript"></script>
+	    <script src="js/jquery.alerts.js" type="text/javascript"></script>
     </head>
     <body>
         

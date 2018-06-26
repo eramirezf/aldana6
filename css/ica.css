@@ -1,0 +1,22 @@
+body {
+    width: 99%;
+    background: linear-gradient(to right, #b5261e 25px, white 25px);
+}
+
+.main {
+    margin: 0px 0px 0px 30px;
+}
+
+nav>a {
+    display: inline-block;
+    padding: 5px 15px;
+}
+
+.acta {
+    margin: 10px 0px 0px 0px;
+}
+
+.acta>p,h1,h3 {
+    text-align: center;
+    margin: 0;
+}
