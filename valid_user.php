@@ -7,7 +7,6 @@
     include("connect_db.php");
     connect_db();
     
-    sleep(10);
     
     $usr = $_POST['usuario'];
     $pw = $_POST['password'];
