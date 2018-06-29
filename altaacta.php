@@ -24,7 +24,7 @@
     //Pasar los parámetros del POST a variables locales
     $seccion = $_POST['seccion'];
     $tipo_casilla = $_POST['tipo_casilla'];
-    $numero_casilla = $POST['casilla_number'];
+    $numero_casilla = $_POST['casilla_number'];
     $id = "";
     $id = $seccion.$tipo_casilla.$numero_casilla;
     $boletas_sobrantes = (int)$_POST['boletas_sobrantes'];
@@ -32,7 +32,7 @@
     $voto_rc = (int)$_POST['voto_rc'];
     $votos_emitidos1 = $voto_nominal + $voto_rc;
     $votos_escrutados = (int)$_POST['votos_escrutados'];
-    $incidencia1 = (votos_escrutados == votos_emitidos1);
+    $incidencia1 = votos_escrutados - votos_emitidos1;
     $PRI = (int)$_POST['PRI'];
     $PVEM = (int)$_POST['PVEM'];
     $NA = (int)$_POST['NA'];
@@ -54,7 +54,7 @@
     $NO_REGISTRADOS = (int)$_POST['NO_REGISTRADOS'];
     $NULOS = (int)$_POST['NULOS'];
     $votos_emitidos2 = $PRI + $PVEM + $NA + $VR + $MC + $PAN_PRD_MC + $PAN + $PRD + $PAN_PRD + $PAN_MC + $PRD_MC + $MORENA + $MORENA_PES_PT + $PES + $PT + $MORENA_PES + $MORENA_PT + $PES_PT;
-    $incidencia2 = ($votos_emitidos2 == $votos_escrutados);
+    $incidencia2 = $votos_emitidos2 - $votos_escrutados;
     $cobertura_rc = $_POST['cobertura_rc'];
     $nombre_rc = $_POST['nombre_rc'];
     
@@ -81,7 +81,7 @@
     else {
         ?>
          <form name="formulario" method="POST" action="principal.php">
-            <input type="hidden" name="msg_error" value="0">
+            <input type="hidden" name="msg_error" value="2">
          </form>
         <?php
     }
