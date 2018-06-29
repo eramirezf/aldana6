@@ -58,6 +58,36 @@
     $cobertura_rc = $_POST['cobertura_rc'];
     $nombre_rc = $_POST['nombre_rc'];
     
+    $sql = "INSERT INTO resultados(id, seccion, tipo_casilla, numero_casilla, boletas_sobrantes, voto_nominal, voto_rc, votos_emitidos1,
+    votos_escrutados, incidencia1, PRI, PVEM, NA, VR, MC, PAN_PRD_MC, PAN, PRD, PAN_PRD, PAN_MC, PRD_MC, MORENA, MORENA_PES_PT, 
+    PES, PT, MORENA_PES, MORENA_PT, PES_PT, NO_REGISTRADOS, NULOS, votos_emitidos2, incidencia2, cobertura_rc, nombre_rc) values
+    ('".$id."', '".$seccion."', '".$tipo_casilla."', '".$numero_casilla."', '".$boletas_sobrantes."', '".$voto_nominal."', 
+    '".$voto_rc."', '".$votos_emitidos1."', '".$votos_escrutados."', '".$incidencia1."',
+    '".$PRI."', '".$PVEM."', '".$NA."', '".$VR."', '".$MC."', '".$PAN_PRD_MC."', '".$PAN."', '".$PRD."', 
+    '".$PAN_PRD."', '".$PAN_MC."', '".$PRD_MC."', 
+    '".$MORENA."', '".$MORENA_PES_PT."', '".$PES."', '".$PT."', '".$MORENA_PES."', '".$MORENA_PT."', '".$PES_PT."', 
+    '".$NO_REGISTRADOS."', '".$NULOS."', '".$votos_emitidos2."', '".$incidencia2."', '".$cobertura_rc."', '".$nombre_rc."')";
+    $result = mysql_query($sql, $conexio);
     
-    
+    //Next let's create a form to inform the status
+    if ($result) {
+        ?>
+        <!-- This is if insert results correct -->
+        <form name="formulario" method="POST" action="principal.php">
+            <input type="hidden" name="msg_error" value="1"> 
+        </form>
+        <?php
+    }
+    else {
+        ?>
+         <form name="formulario" method="POST" action="principal.php">
+            <input type="hidden" name="msg_error" value="0">
+         </form>
+        <?php
+    }
 ?>
+
+<script type="text/javascript">
+    //Redireccionar con el formulario creado
+    document.formulario.submit();
+</script>

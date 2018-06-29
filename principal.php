@@ -64,5 +64,27 @@
             <div><a href="exit.php">Cerrar sesión</a></div>
         </div>
         
+        <!-- Mostrar mensaje de consulta, en caso de existir -->
+        <?php
+            if(isset($_POST['msg_error'])) {
+                switch($_POST['msg_error']) {
+                    case 1:
+                        ?>
+                        <script type="text/javascript">
+                            jAlert("Alta exitosa de acta.", "Aldana6");
+                        </script>
+                        <?php
+                    break;
+                    case 2:
+                        ?>
+                        <script type="text/javascript">
+                            jAlert("Ocurrió un error, vuelva a intentar.", "¡ERROR!");
+                        </script>
+                        <?php
+                    break;
+                }
+            }
+        ?>
+        
     </body>
 </html>
